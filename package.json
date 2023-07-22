@@ -8,7 +8,9 @@
     "start:dev": "tsx watch src/bootstrap.ts",
     "build": "tsup src --out-dir dist",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "eslint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "eslint:fix": "eslint --ignore-path .eslintignore --ext .js,.ts . --fix"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +26,11 @@
     "@rocketseat/eslint-config": "2.1.0",
     "@types/bcryptjs": "2.4.2",
     "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "6.1.0",
+    "@typescript-eslint/parser": "6.1.0",
     "eslint": "8.45.0",
+    "eslint-config-prettier": "8.8.0",
+    "prettier": "3.0.0",
     "prisma": "5.0.0",
     "tsup": "^7.1.0",
     "tsx": "^3.12.7",

@@ -1,9 +1,9 @@
-import { FastifyInstance } from "fastify";
+import { FastifyInstance } from 'fastify';
 
 import { register } from '@/http/controllers/register';
 
 export async function appRoutes(app: FastifyInstance) {
-  app.get('/', register);
+	app.get('/', register);
 
 
 }
